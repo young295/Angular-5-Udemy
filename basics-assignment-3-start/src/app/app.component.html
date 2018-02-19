@@ -8,6 +8,16 @@
         <li>Log all button clicks in an array and output that array below the secret paragraph (maybe log a timestamp or simply an incrementing number)</li>
         <li>Starting at the 5th log item, give all future log items a blue background (via ngStyle) and white color (ngClass)</li>
       </ol>
+
+      <button class="btn btn-primary" (click)="toggleDisplay()" >Display Details</button>
+      <p *ngIf="showPara">This is the magical dissapearing paragraph!</p>
+
+
+      <div *ngFor="let btnClick of btnClicks">
+        <p *ngIf="btnClick > 4; else beforeFour" [ngStyle]="{backgroundColor: 'blue'}" [ngClass]="{afterFour: true}">{{btnClicks[btnClick-1]}}</p>
+        <ng-template #beforeFour>{{btnClicks[btnClick-1]}}</ng-template>
+        
+      </div>
     </div>
   </div>
 </div>

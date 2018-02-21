@@ -1,3 +1,12 @@
+.odd{
+  color: pink;
+  font-weight: 700;
+}
+
+.even{
+  color: forestgreen;
+}
+
 .container {
   margin-top: 30px;
 }

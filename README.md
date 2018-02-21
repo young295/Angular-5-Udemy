@@ -13,7 +13,7 @@ The directory, 'cmp-databinding-start', was the starting resource given to work 
 ### Directives Deep Dive || directives-start
 The directory, 'directives-start', was the starting directory given for the section of the course that dove deeper into how directives work, more about the types of directives, and how we can create our own.
 
-### Using Services & Dependency Injection
+### Using Services & Dependency Injection|| services-start
 The directory 'services-start' was the starting directory given for the section of the course that introduced the concept of services and how they can be implemented properly using dependency injection.
 
 ### Assignments

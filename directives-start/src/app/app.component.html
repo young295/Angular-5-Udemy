@@ -6,21 +6,40 @@
       <br>
       <ul class="list-group">
 
-        <div *ngIf="onlyOdd">
+        <div *appUnless="!onlyOdd">
           <li class="list-group-item" [ngClass]="{odd: odd % 2 !== 0}" [ngStyle]="{'background-color': odd % 2 !== 0 ? 'lightblue' : 'transparent'}"
             *ngFor="let odd of oddNumbers">
             {{ odd }}
           </li>
         </div>
-        <div *ngIf="!onlyOdd">
+
+        <!-- <div *ngIf="!onlyOdd">
+          <li class="list-group-item" [ngClass]="{even: even % 2 === 0}" [ngStyle]="{'background-color': even % 2 !== 0 ? 'lightblue' : 'transparent'}"
+            *ngFor="let even of evenNumbers">
+            {{ even }}
+          </li>
+        </div> -->
+
+        <div *appUnless="onlyOdd">
           <li class="list-group-item" [ngClass]="{even: even % 2 === 0}" [ngStyle]="{'background-color': even % 2 !== 0 ? 'lightblue' : 'transparent'}"
             *ngFor="let even of evenNumbers">
             {{ even }}
           </li>
         </div>
-        <p appBasicHighlight>Style me with basic directive!</p>
-        <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a better directive!</p>
+
+        <!-- what the * before ngIf actually does -->
+        <!-- <ng-template [ngIf]="!onlyOdd">
+          <div>
+            <li class="list-group-item" [ngClass]="{even: even % 2 === 0}" [ngStyle]="{'background-color': even % 2 !== 0 ? 'lightblue' : 'transparent'}"
+              *ngFor="let even of evenNumbers">
+              {{ even }}
+            </li>
+          </div>
+        </ng-template> -->
+
       </ul>
+      <p appBasicHighlight>Style me with basic directive!</p>
+      <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with a better directive!</p>
     </div>
   </div>
 </div>

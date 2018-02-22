@@ -16,5 +16,8 @@ The directory, 'directives-start', was the starting directory given for the sect
 ### Using Services & Dependency Injection|| services-start
 The directory 'services-start' was the starting directory given for the section of the course that introduced the concept of services and how they can be implemented properly using dependency injection.
 
+### Changing Pages with Routing || routing-start
+The directory 'routing-start' was the starting resource directory given for the section of the course that indroduced routing for the first time. Before this module, I had not dealt with routing, only switching what is shown on the page by using *ngIf conditions on separate divs.
+
 ### Assignments
 The assignment directories are included as zipped resources from the online course, so were initialized by the instructor, then completed by myself. The assignments are each just a simple set of instructions that review the topics from the preceding video lectures.

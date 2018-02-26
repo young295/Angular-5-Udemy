@@ -23,5 +23,8 @@ The directory, 'routing-start', was the starting resource directory given for th
 ### Understanding Observables || observables-start
 The directory, 'observables-start', was the starting directory given for the section of the course that introduced Observables. In the routing section, observables were used as a return type regarding the simple auth and auth guard services we implemented. This section will dive deeper into observables and waht they are, what they can be used for, and why Angular uses them.
 
+### Handling Forms in Angular Apps || forms-td-start | forms-reactive-start
+The directories, 'forms-td-start' and 'forms-reactive-start', were the starting directories given for the section of the course that introduced forms with Angular. I have done work with forms in HTML5, PHP, and .NET, but have never used javascript in any way, so this section is a fresh subject for me as a whole. The course outlines two methods of creating forms using Angular: Template-Driven and Reactive. There are two separate directories worked in for this section to differentiate the two types of forms I learned.
+
 ### Assignments
 The assignment directories are included as zipped resources from the online course, so were initialized by the instructor, then completed by myself. The assignments are each just a simple set of instructions that review the topics from the preceding video lectures.
